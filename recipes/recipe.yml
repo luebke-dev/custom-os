@@ -22,6 +22,10 @@ modules:
       - restic
       - rclone
       - coolercontrol
+    remove:
+      - firefox
+      - firefox-langpacks
+      - kitty
 
   - from-file: common/dx.yml
 
@@ -56,6 +60,9 @@ modules:
         - io.missioncenter.MissionCenter
         - com.bitwarden.desktop
         - com.rtosta.zapzap
+        - de.gonicus.gonnect
+        - app.devsuite.Ptyxis
+        - org.mozilla.firefox
     user:
       repo-name: flathub
 
