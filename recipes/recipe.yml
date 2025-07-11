@@ -14,6 +14,7 @@ modules:
         - lizardbyte/stable
         - felfert/cherryrgb
         - codifryed/CoolerControl
+        - kylegospo/distrobox-utils 
   - type: rpm-ostree
     install:
       - Sunshine
@@ -22,6 +23,7 @@ modules:
       - restic
       - rclone
       - coolercontrol
+      - xdg-utils-distrobox
     remove:
       - firefox
       - firefox-langpacks
