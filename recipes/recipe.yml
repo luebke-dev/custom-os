@@ -23,7 +23,7 @@ modules:
       - restic
       - rclone
       - coolercontrol
-      - xdg-utils-distrobox
+      #- xdg-utils-distrobox
     remove:
       - firefox
       - firefox-langpacks
