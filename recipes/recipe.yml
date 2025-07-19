@@ -69,6 +69,7 @@ modules:
         - de.gonicus.gonnect
         - app.devsuite.Ptyxis
         - org.mozilla.firefox
+        - org.gnome.TextEditor
     user:
       repo-name: flathub
 
@@ -77,6 +78,10 @@ modules:
     snippets:
       - "setcap 'cap_sys_admin+p' /usr/bin/sunshine-v*"
 
+  # Install resticprofile
+  - type: script
+    snippets:
+      - "curl -sfL https://raw.githubusercontent.com/creativeprojects/resticprofile/master/install.sh | sh"
   - type: systemd
     system:
       enabled:
