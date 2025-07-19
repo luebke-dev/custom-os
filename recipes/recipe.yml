@@ -14,7 +14,6 @@ modules:
         - lizardbyte/stable
         - felfert/cherryrgb
         - codifryed/CoolerControl
-        #- kylegospo/distrobox-utils 
   - type: rpm-ostree
     install:
       - Sunshine
@@ -23,7 +22,14 @@ modules:
       - restic
       - rclone
       - coolercontrol
-      #- xdg-utils-distrobox
+      - code
+      - docker-ce
+      - docker-ce-cli
+      - docker-compose-plugin
+      - libvirt
+      - libvirt-nss
+      - lxc
+      - qemu
     remove:
       - firefox
       - firefox-langpacks
