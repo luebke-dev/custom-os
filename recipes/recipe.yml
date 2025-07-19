@@ -35,8 +35,6 @@ modules:
       - firefox-langpacks
       - kitty
 
-  - from-file: common/dx.yml
-
   - type: default-flatpaks
     notify: true
     system:
