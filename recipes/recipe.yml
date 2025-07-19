@@ -14,7 +14,7 @@ modules:
         - lizardbyte/stable
         - felfert/cherryrgb
         - codifryed/CoolerControl
-        - kylegospo/distrobox-utils 
+        #- kylegospo/distrobox-utils 
   - type: rpm-ostree
     install:
       - Sunshine
