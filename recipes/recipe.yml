@@ -71,6 +71,7 @@ modules:
         - de.gonicus.gonnect
         - app.devsuite.Ptyxis
         - org.mozilla.firefox
+        - org.wireshark.Wireshark
         - org.gnome.TextEditor
     user:
       repo-name: flathub
