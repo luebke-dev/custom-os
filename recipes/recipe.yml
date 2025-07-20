@@ -14,6 +14,7 @@ modules:
         - lizardbyte/stable
         - felfert/cherryrgb
         - codifryed/CoolerControl
+        - zeno/scrcpy
   - type: rpm-ostree
     install:
       - Sunshine
@@ -30,6 +31,7 @@ modules:
       - libvirt-nss
       - lxc
       - qemu
+      - scrcpy
     remove:
       - firefox
       - firefox-langpacks
