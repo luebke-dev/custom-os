@@ -73,6 +73,7 @@ modules:
         - org.mozilla.firefox
         - org.wireshark.Wireshark
         - org.gnome.TextEditor
+        - org.gnome.Calculator
     user:
       repo-name: flathub
 
