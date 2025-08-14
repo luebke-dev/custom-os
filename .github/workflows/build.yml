@@ -27,8 +27,8 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here
-          - hyprland-light.yml
-          - hyprland-nvidia.yml
+          - hyprland-light.yaml
+          - hyprland-nvidia.yaml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
