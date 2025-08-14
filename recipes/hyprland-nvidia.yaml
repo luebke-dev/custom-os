@@ -1,5 +1,5 @@
 ---
-name: custom-os
+name: hyprland-nvidia
 description: This is my personal OS image.
 base-image: ghcr.io/wayblueorg/hyprland-nvidia-open
 image-version: 42

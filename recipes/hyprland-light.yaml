@@ -1,0 +1,80 @@
+---
+name: hyprland-light
+description: custom os for my nuc
+base-image: ghcr.io/wayblueorg/hyprland
+image-version: 42
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+  - type: dnf
+    repos:
+      copr:
+        - felfert/cherryrgb
+        - codifryed/CoolerControl
+        - zeno/scrcpy
+  - type: rpm-ostree
+    install:
+      - nautilus
+      - cherryrgb
+      - restic
+      - rclone
+      - coolercontrol
+      - code
+      - docker-ce
+      - docker-ce-cli
+      - docker-compose-plugin
+      - libvirt
+      - libvirt-nss
+      - lxc
+      - qemu
+      - scrcpy
+    remove:
+      - firefox
+      - firefox-langpacks
+      - kitty
+
+  - type: default-flatpaks
+    notify: true
+    system:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      repo-title: "Flathub (system-wide)"
+      install:
+        - com.spotify.Client
+        - com.discordapp.Discord
+        - io.github.flattool.Warehouse
+        - com.teamspeak.TeamSpeak3
+        - org.filezillaproject.Filezilla
+        - com.github.iwalton3.jellyfin-media-player
+        - im.riot.Riot
+        - org.signal.Signal
+        - org.zulip.Zulip
+        - org.mozilla.firefox
+        - org.pulseaudio.pavucontrol
+        - com.dec05eba.gpu_screen_recorder
+        - org.libreoffice.LibreOffice
+        - io.missioncenter.MissionCenter
+        - com.bitwarden.desktop
+        - com.rtosta.zapzap
+        - de.gonicus.gonnect
+        - app.devsuite.Ptyxis
+        - org.mozilla.firefox
+        - org.wireshark.Wireshark
+        - org.gnome.TextEditor
+        - org.gnome.Calculator
+    user:
+      repo-name: flathub
+
+  # Install resticprofile
+  - type: script
+    snippets:
+      - "curl -sfL https://raw.githubusercontent.com/creativeprojects/resticprofile/master/install.sh | sh"
+  - type: systemd
+    system:
+      enabled:
+        - coolercontrold
+
+  - type: signing
+
