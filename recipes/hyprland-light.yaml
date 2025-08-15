@@ -25,10 +25,6 @@ modules:
       - docker-ce
       - docker-ce-cli
       - docker-compose-plugin
-      - libvirt
-      - libvirt-nss
-      - lxc
-      - qemu
       - scrcpy
     remove:
       - firefox
