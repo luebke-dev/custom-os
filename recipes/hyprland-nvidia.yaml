@@ -77,11 +77,6 @@ modules:
     user:
       repo-name: flathub
 
-  # Fix sunshine permissions
-  - type: script
-    snippets:
-      - "setcap 'cap_sys_admin+p' /usr/bin/sunshine-v*"
-
   # Install resticprofile
   - type: script
     snippets:
