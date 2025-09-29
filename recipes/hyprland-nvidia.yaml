@@ -35,7 +35,7 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
-      - kitty
+      #- kitty
 
   - type: default-flatpaks@v1
     notify: true
