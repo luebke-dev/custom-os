@@ -32,6 +32,9 @@ modules:
       - lxc
       - qemu
       - scrcpy
+      - cmake
+      - meson
+      - cpio
     remove:
       - firefox
       - firefox-langpacks
